@@ -8,11 +8,12 @@ This repository will help beginners who have just completed the Git course & wan
 Geeks who are eager to contribute, must read it. 
 
 ### Creating Issues
-Make sure you have a GitHub account.
-Search GitHub and Google to see if your issue has already been reported - Create an issue in GitHub, assuming one does not already exist.
-Clearly describe the issue including steps to reproduce when it is a bug.
-Make sure you fill in the earliest version that you know has the issue.
-###Getting Started
+1.Make sure you have a GitHub account.
+  - Search GitHub and Google to see if your issue has already been reported - Create an issue in GitHub, assuming one does not already exist.
+    -Clearly describe the issue including steps to reproduce when it is a bug.
+    -Make sure you fill in the earliest version that you know has the issue.
+    
+### Getting Started
 Goto the Simple-Static-Website repository
 Click on the Fork button in the upper right corner.
 Introduce your self to GIT, make sure you use an email associated with your GitHub account.
@@ -28,7 +29,7 @@ git remote set-url origin https://github.com/<your username>/simple-static-websi
 Setup simple-static-website to be able to fetch from the master
 
 git remote add upstream https://github.com/The-Codesis/simple-static-website.git
-###Adding Features
+### Adding Features
 When you add a new feature always create an issue first, this allows others to comment and give you tips. It will also help us keep track of what people are adding and with new releases helps us to write new release notes and give you credit for your work.
 
 Secondly, always work in a branch, never work on the master branch. Keep your master branch in sync with the master of the official Simple-Static-Website repository. This makes the pull requests (you do want your work to be in the main branch right?) easier for us.
@@ -55,7 +56,7 @@ git merge upstream/master
 At this point, your local branch is synced to the original repository's master branch. To update your forked Github repository, you need to push your changes to the forked Github repository.
 
 git push origin master
-###Alternative
+### Alternative
 git fetch only downloads the changes from the upstream and doesn't integrate those into your forked repository. You have to use an additional command git merge to do so. Alternatively, git pull not only downloads the changes but also integrate those into your forked repository.
 ```
 Set up the original repository as your upstream.
