@@ -10,25 +10,29 @@ Geeks who are eager to contribute, must read it.
 ### Creating Issues
 1.Make sure you have a GitHub account.
   - Search GitHub and Google to see if your issue has already been reported - Create an issue in GitHub, assuming one does not already exist.
-    -Clearly describe the issue including steps to reproduce when it is a bug.
-    -Make sure you fill in the earliest version that you know has the issue.
-    
+        -Clearly describe the issue including steps to reproduce when it is a bug.
+        -Make sure you fill in the earliest version that you know has the issue.
+
 ### Getting Started
 Goto the Simple-Static-Website repository
 Click on the Fork button in the upper right corner.
 Introduce your self to GIT, make sure you use an email associated with your GitHub account.
-
+```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+```
 Make sure you clone the forked repository.
-
+```
 git clone https://github.com/<your username>/simple-static-website.git
+```
 Switch Simple-Static-Website to your fork
-
+```
 git remote set-url origin https://github.com/<your username>/simple-static-website.git
+```
 Setup simple-static-website to be able to fetch from the master
-
+```
 git remote add upstream https://github.com/The-Codesis/simple-static-website.git
+```
 ### Adding Features
 When you add a new feature always create an issue first, this allows others to comment and give you tips. It will also help us keep track of what people are adding and with new releases helps us to write new release notes and give you credit for your work.
 
@@ -41,7 +45,7 @@ Here is a simplified workflow on how to add a new feature:
 ### Syncing with fork
 Syncing your forked repository to the original repository is an important step before submitting any pull request to the original repository. So, it goes something like, you fetch from the original repository (Upstream Repository) to your working area (your local copy) and merge it with the fork's master branch and then you push it to your forked Github repository.
 
-You can see all your remotes with git remote -v, if you don't have upstream set as https://github.com/The-Codesis/simple-static-website.git, set up the original repository as your upstream.
+You can see all your remotes with` git remote -v`, if you don't have upstream set as` https://github.com/The-Codesis/simple-static-website.git` set up the original repository as your upstream.
 
 git remote add upstream https://github.com/The-Codesis/simple-static-website.git
 By now, you have set the upstream as the original repository i.e. https://github.com/The-Codesis/simple-static-website.git and the origin as the forked repository i.e. https://github.com/<your username>/simple-static-website.git.
