@@ -1,0 +1,93 @@
+<!--Summary
+
+Use the HTML <ul> element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML <li> element to define a list item
+Lists can be nested
+List items can contain other HTML elements
+***Use the CSS property float:left to display a list horizontally**
+
+
+-->
+
+<!--
+<ul>  Defines an unordered list
+<ol>  Defines an ordered list
+<li>  Defines a list item
+<dl>  Defines a description list
+<dt>  Defines a term in a description list
+<dd>  Describes the term in a description list
+
+-->
+
+<!--
+-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+/*styling all the elemnts with id "myheader"*/
+#myheader{
+  background-color: lightblue;
+  color: black;
+  padding: 30px;
+  text-align: center;
+}
+/*styling all the elements with class and Divison.*/
+.cities{
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<h1 id="myheader">MY_HEADER</h1>
+<div class="cities">
+  <h3>London</h3>
+  <p>I want to go and VIsit London</p>
+  <h4>Paris</h4>
+  <p>I Want to Visit Paris awhich is Beautiful more than London</p>
+</div>
+
+</body>
+</html>
