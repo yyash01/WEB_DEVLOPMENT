@@ -1,13 +1,13 @@
 # WEB_DEVLOPMENT
 Practice for Front-end.
 
-###Simple Static Website
+### Simple Static Website
 This repository will help beginners who have just completed the Git course & want to apply their theoretical knowledge.
 
-###How to contribute
+### How to contribute
 Geeks who are eager to contribute, must read it. 
 
-###Creating Issues
+### Creating Issues
 Make sure you have a GitHub account.
 Search GitHub and Google to see if your issue has already been reported - Create an issue in GitHub, assuming one does not already exist.
 Clearly describe the issue including steps to reproduce when it is a bug.
@@ -37,7 +37,7 @@ Finally, try to keep your branches focused on fixing/adding only one feature and
 
 Here is a simplified workflow on how to add a new feature:
 
-###Syncing with fork
+### Syncing with fork
 Syncing your forked repository to the original repository is an important step before submitting any pull request to the original repository. So, it goes something like, you fetch from the original repository (Upstream Repository) to your working area (your local copy) and merge it with the fork's master branch and then you push it to your forked Github repository.
 
 You can see all your remotes with git remote -v, if you don't have upstream set as https://github.com/The-Codesis/simple-static-website.git, set up the original repository as your upstream.
@@ -57,26 +57,26 @@ At this point, your local branch is synced to the original repository's master b
 git push origin master
 ###Alternative
 git fetch only downloads the changes from the upstream and doesn't integrate those into your forked repository. You have to use an additional command git merge to do so. Alternatively, git pull not only downloads the changes but also integrate those into your forked repository.
-
+```
 Set up the original repository as your upstream.
 
 git remote add upstream https://github.com/The-Codesis/simple-static-website.git
 Now, fetch and merge the changes from the original repository simultaneously.
-
+```
 git pull upstream master
 Update your forked Github repository.
-
+```
 git push origin master
 To summarize, see the section below.
-
-###Get latest version
+```
+### Get latest version
 Update your master (both locally and on GitHub)
 
 git fetch upstream
 git checkout master
 git merge upstream/master
 git push
-###Git Merge VS Git Rebase
+### Git Merge VS Git Rebase
 Rebasing and merging are both used for integrating changes from one branch into another—but they do it in different ways.
 
 Instead of
@@ -85,9 +85,9 @@ git merge upstream/master
 you can also use
 
 git rebase upstream/master
-###The Merge Option
+### The Merge Option
 git merge will integrate the histories of the upstream branch and your master branch, giving you a branch structure that looks like:
-
+```
 IMAGE
 
 Merging preserves history since, the existing branches are not changed in any way.Merging adds a new commit to the history.
@@ -96,7 +96,7 @@ The Rebase Option
 git rebase will move the entire upstream branch on the tip of your master branch, giving you a branch structure that looks like:
 
 IMAGE
-
+```
 Rebasing re-writes the history by creating brand new commits for each commit in the original branch.
 
 Which command to prefer?
@@ -105,11 +105,11 @@ git rebase is usually preferred over git merge because
 It results in a perfectly linear and readable history.
 It eliminates the unnecessary merge commits required by git merge.
 It can remove undesired commits or squash two or more commits into one.
-###Create a branch to do your work.
+### Create a branch to do your work.
 A good practice is to call the branch in the form of GH- followed by the title of the issue. This makes it easier to find out the issue you are trying to solve and helps us to understand what is done in the branch. Calling a branch my-work is confusing. Names of a branch can not have a space, and should be replaced with a hyphen.
 
 git checkout -b GH-issuenumber-title-of-issue
-###Work and commit
+### Work and commit
 Do you work, and commit as you see fit. Make your commit messages helpful.
 
 In general commit messages follow these guidelines
@@ -125,11 +125,11 @@ See this commit format
 
 You can also refer this article on how to write commit messages.
 
-###Push your changes up to GitHub.
+### Push your changes up to GitHub.
 If this is the first time pushing to GitHub you will need to extended command, otherwise, you can simply do a git push.
 
 git push -u origin GH-issuenumber-title-of-issue
-###Pull Request
+### Pull Request
 When finished create a pull request from your branch to the main Simple-Static-Website repository.
 
 When making a pull request use Closes #(issue_number) in the description of your PR, so that GitHub automatically associates your PR with that issue.
@@ -146,7 +146,7 @@ Make it clear,complete and simple so your PR gets merged easily !
 
 Refer this Git Fork and Pull Request Cheat Sheet
 
-###Code Review
+### Code Review
 You can also help the community by reviewing other people's PR, this is known as code review
 
 Go to a PR, then Files Changed section, review the code and mark the file as reviewed
@@ -155,7 +155,7 @@ You can also use GitHub's WebUI to add comments and provide some suggestions for
 
 Refer this link to know about Code Reviews and its importance.
 
-###Using GitHub UI :
+### Using GitHub UI :
 GitHub provides a Web UI to make communication process easier
 
 You can use @(account_name) to mention someone
