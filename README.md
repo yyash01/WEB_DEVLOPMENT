@@ -1,8 +1,6 @@
 # WEB_DEVLOPMENT
 Practice for Front-end.
 
-
-
 ###Simple Static Website
 This repository will help beginners who have just completed the Git course & want to apply their theoretical knowledge.
 
